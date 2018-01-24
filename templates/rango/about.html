@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load staticfiles %} <!-- New line -->
+<html>
+
+   <head>
+     <title> Rango </title>
+
+     <div>
+
+       <h1> Rango says here is the about page</h1>
+       <a href="/rango/">Index</a><br/>
+       <img src="{% static "images/about.jpg" %}"
+       alt="Funny picture of Rango" />
+     </div>
+  </head>
+
+  <body>
+      <div> <br />
+          <font size="+2">This tutorial has been put together by Martina Pironkova. </font>
+      </div>
+
+      <div>
+        <img src="{{MEDIA_URL}}hamster.jpg"
+			   alt="A hamster." />
+      </div>
+
+  </body>
+
+
+</html>
